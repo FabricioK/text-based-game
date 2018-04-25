@@ -1,0 +1,1 @@
+export interface Room { title: string; text : string; duration: number; }

@@ -1,0 +1,9 @@
+
+:host{
+   background-color: #111;
+   font-family: Consolas, monaco, monospace, courier;
+   color: green;
+   border: none;
+   outline: none;
+   width: 90%;
+}

@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <button (click)="auth.newGame()">
+    <i class="fa fa-google"></i> New Game
+  </button>
+</mat-card>
+<mat-card class="example-card" *ngIf="game| async as g">
+   {{g.title}}
+  <li class="text" *ngFor="let room of stepList">
+    {{room.title}}
+    <app-console-display [text]="room.text" [duration]="room.duration"> </app-console-display>
+  </li>
+  <button (click)=push(g.id)>teste</button>
+</mat-card>
